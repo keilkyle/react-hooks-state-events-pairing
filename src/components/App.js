@@ -1,4 +1,6 @@
 import video from "../data/video.js";
+import Description from "./Description"
+import Comments from "./Comments"
 
 function App() {
   console.log("Here's your data:", video);
@@ -13,6 +15,9 @@ function App() {
         allowFullScreen
         title="Thinking in React"
       />
+      <Description vid={video}/>
+      <Comments vid={video}/>
+
     </div>
   );
 }
